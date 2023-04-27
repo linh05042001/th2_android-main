@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thêm Công Việc"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Tên công việc:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:id="@+id/edTenCongViec"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Nội dung :"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:id="@+id/edNoiDung"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày đến hạn:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày đến hạn:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:numStars="4"
+                android:rating="2"
+                android:stepSize="1"
+                android:id="@+id/rt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày đến hạn:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edNgayDenHan"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Tình trạng:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <RadioButton
+               android:id="@+id/ck1"
+               android:text="chưa thực hiện"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <RadioButton
+               android:id="@+id/ck2"
+               android:text="đang thực hiện"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <RadioButton
+               android:id="@+id/ck3"
+               android:text="hoàn thành"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+       </RadioGroup>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Cộng tác:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/ck4"
+                android:text="1 mình"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/ck5"
+                android:text="làm chung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <CheckBox
+            android:id="@+id/cb1"
+            android:text=" phuong an 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/cb2"
+            android:text=" phuong an 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:text="Add" />
+
+        <Button
+            android:text="Cancel"
+            android:id="@+id/btCancel"
+            android:background="@color/yellow"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

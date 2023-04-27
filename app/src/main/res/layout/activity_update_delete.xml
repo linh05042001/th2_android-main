@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Them chi tieu"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Tên công việc:"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:id="@+id/medTenCongViec"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Nội dung :"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:id="@+id/medNoiDung"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày đến hạn:"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/medNgayDenHan"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Tình trạng:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/mck1"
+                android:text="chưa thực hiện"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/mck2"
+                android:text="đang thực hiện"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/mck3"
+                android:text="hoàn thành"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Cộng tác:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/mck4"
+                android:text="1 mình"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/mck5"
+                android:text="làm chung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Udate"
+            android:id="@+id/mbtUpdate"
+            android:background="@color/yellow"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Remove"
+            android:id="@+id/mbtRemove"
+            android:background="@color/yellow"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Back"
+            android:id="@+id/mbtBack"
+            android:background="@color/yellow"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

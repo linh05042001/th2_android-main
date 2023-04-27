@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ThucHanh2</string>
+    <string-array name="filter1">
+        <item>Tên</item>
+        <item>Nội dung</item>
+    </string-array>
+    <string-array name="category">
+        <item>Mua sam</item>
+        <item>Tien an</item>
+        <item>Tien nha</item>
+        <item>Tien dien</item>
+        <item>Tien nuoc</item>
+        <item>Di lai</item>
+    </string-array>
+</resources>

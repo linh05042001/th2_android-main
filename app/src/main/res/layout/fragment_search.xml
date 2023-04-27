@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <SearchView
+            android:id="@+id/search"
+            android:layout_marginTop="10dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="nhập công việc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/sp1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/eFrom"
+        android:textSize="12dp"
+        android:hint="chon tu ngay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/eTo"
+        android:textSize="12dp"
+        android:hint="chon den ngay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+   <LinearLayout
+       android:layout_marginTop="10dp"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <Button
+           android:id="@+id/btthongke"
+           android:text="Tình trạng công việc"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"/>
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content">
+           <ListView
+               android:id="@+id/lv"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+   </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewSearch"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
